@@ -1,0 +1,204 @@
+body {
+    background: #B2CCCC;
+}
+a{
+    cursor :Pointer;
+    color : #2E64FE;
+}
+.share{
+    float:right;
+    color:Green;
+
+}   
+#notes {
+    margin-bottom : 100px;
+    margin-left:-40px;
+}
+#notes li {
+    list-style-type: none;
+}
+#notes ul.btns li {
+    list-style-type: none;
+    display: inline;
+    float : left;
+    margin-top: -30px;
+    
+}
+#notes ul.btns li.editeNote {
+    float : left;
+    margin-left:-40px;
+}
+#notes ul.btns li.deleteNote {
+    float : right;
+}
+#notes li.note {
+    list-style-type: none;
+    position: relative;
+    width: 290px;
+    min-height: 100px;
+    margin: 25px auto;
+    padding: 10px 5px 5px 5px;
+    -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    box-shadow: 0 1px 2px #000;
+    -webkit-transform: rotate(-.5deg); 
+    -moz-transform: rotate(-.5deg); 
+    -o-transform: rotate(-.5deg);     
+}
+#notes li.note p{
+    list-style-type: none;
+    width: 299px;
+    min-height: 99px;
+    margin: -25px auto;
+    padding: 25px 5px 5px 5px;
+}
+#notes li.note:nth-child(even) {
+    -webkit-transform: rotate(.5deg);
+    -moz-transform: rotate(.5deg);
+    -o-transform: rotate(.5deg);   
+}
+#notes li.blue,#note_show.blue,.colors_blue
+{
+    background-color: #A9F5F9;
+}
+#notes li.green,#note_show.green,.colors_green
+{
+    background-color: #81F781;
+}
+#notes li.red,#note_show.red,.colors_red
+{
+    background-color: #F5A9A9;
+}
+#notes li.yellow,#note_show.yellow,.colors_yellow
+{
+    background-color: #F3F781;
+}
+#notes li.note p {
+    text-align: center;
+    font: normal normal normal 35px/38px 'Reenie Beanie', Helvetica, Arial, sans-serif;
+    color: #000;
+    text-shadow: white 1px 1px 0px;
+    overflow:hidden;
+}
+#notes li.note::before {
+    content: ' ';
+    display: block;
+    position: absolute; 
+    left: 115px;
+    top: -15px;
+    width: 75px;
+    height: 25px;
+    z-index: 2;
+    background-color: rgba(243,245,228,0.5);
+    border: 2px solid rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0 0 5px #888;
+    -moz-box-shadow: 0 0 5px #888;
+    box-shadow: 2px 2px 2px #000;
+    -webkit-transform: rotate(-6deg); 
+    -moz-transform: rotate(-6deg); 
+    -o-transform: rotate(-6deg); 
+}
+#notes li.note:nth-child(even)::before {
+    -webkit-transform: rotate(6deg); 
+    -moz-transform: rotate(6deg); 
+    -o-transform: rotate(6deg);
+}
+#note_show,#addEditNote{
+    z-index : 10;
+    position:fixed;
+    width:305px;
+    min-height:400px;
+    top : 48%;
+    left :52%;
+    margin-left: -160px;
+    margin-top: -200px;
+    
+    -webkit-box-shadow: 0 0 5px #888;
+    -moz-box-shadow: 0 0 5px #888;
+    box-shadow: 2px 2px 2px #000;
+}
+#note_body_p{
+    overflow:auto;
+    font: normal normal normal 25px/25px  Helvetica, Arial, sans-serif;
+    color: #000;
+    text-shadow: white 1px 1px 0px;
+    width :305px;
+    height :280px;
+}
+#note_body{
+    width : 99%;
+    height : 300px;
+}
+#ae_note,#ae_title{
+    <!-- background:#CEF6EC; -->
+}
+#ae_title{
+    width : 304px;
+    height: 50px;
+    
+
+}
+#ae_note{
+    width : 305px;
+    height: 300px;
+
+}
+.note_details{
+    background:#B2CCCC;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #00B3B3 ;
+}
+
+.btn{
+    width: 70px;
+    height: 74px;
+    border-radius: 25px;
+    background-color : black;
+}
+.btn-save{
+    background : url("images/save.png");
+
+}
+.btn-edit{
+    background : url("images/edit.png");
+
+}
+.btn-delete{
+    background : url("images/delete.png");
+}
+.btn-add{
+    background : url("images/add.png");
+    width: 304px;
+    border-radius: 45px;
+    height: 77;
+}
+.btn-back{
+    background : url("images/back.png");
+}
+.btn-colors{
+    width: 76px;
+    height: 74px;
+    border-radius: 25px;
+}
+
+.control_btns{
+    position: absolute;
+    background-color : black;
+    text-align:center;
+    width:100%;
+    bottom:0px;
+}
+#btn_add_div{
+    position : fixed;
+    width: 305px;
+    bottom : 5px;
+    position: fixed;
+    left: 50%;
+    margin-left : -152px;
+    z-index:9; 
+    
+}
+.note_date{
+    background-color: rgba(215, 150, 0, 0.7);
+}
